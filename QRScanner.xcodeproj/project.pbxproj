@@ -11,9 +11,7 @@
 		6B87A48C2B3C065C0080F60B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87A48B2B3C065C0080F60B /* ContentView.swift */; };
 		6B87A48E2B3C065F0080F60B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B87A48D2B3C065F0080F60B /* Assets.xcassets */; };
 		6B87A4912B3C065F0080F60B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B87A4902B3C065F0080F60B /* Preview Assets.xcassets */; };
-		6B87A49B2B3C065F0080F60B /* QRScannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87A49A2B3C065F0080F60B /* QRScannerTests.swift */; };
-		6B87A4A52B3C065F0080F60B /* QRScannerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87A4A42B3C065F0080F60B /* QRScannerUITests.swift */; };
-		6B87A4A72B3C065F0080F60B /* QRScannerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87A4A62B3C065F0080F60B /* QRScannerUITestsLaunchTests.swift */; };
+		6B87A4B42B3C06AA0080F60B /* QRCodeScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B87A4B32B3C06AA0080F60B /* QRCodeScannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,10 +38,8 @@
 		6B87A48D2B3C065F0080F60B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B87A4902B3C065F0080F60B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6B87A4962B3C065F0080F60B /* QRScannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRScannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B87A49A2B3C065F0080F60B /* QRScannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerTests.swift; sourceTree = "<group>"; };
 		6B87A4A02B3C065F0080F60B /* QRScannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QRScannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6B87A4A42B3C065F0080F60B /* QRScannerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerUITests.swift; sourceTree = "<group>"; };
-		6B87A4A62B3C065F0080F60B /* QRScannerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRScannerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6B87A4B32B3C06AA0080F60B /* QRCodeScannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeScannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,8 +71,6 @@
 			isa = PBXGroup;
 			children = (
 				6B87A4882B3C065C0080F60B /* QRScanner */,
-				6B87A4992B3C065F0080F60B /* QRScannerTests */,
-				6B87A4A32B3C065F0080F60B /* QRScannerUITests */,
 				6B87A4872B3C065C0080F60B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -96,6 +90,7 @@
 			children = (
 				6B87A4892B3C065C0080F60B /* QRScannerApp.swift */,
 				6B87A48B2B3C065C0080F60B /* ContentView.swift */,
+				6B87A4B32B3C06AA0080F60B /* QRCodeScannerView.swift */,
 				6B87A48D2B3C065F0080F60B /* Assets.xcassets */,
 				6B87A48F2B3C065F0080F60B /* Preview Content */,
 			);
@@ -108,23 +103,6 @@
 				6B87A4902B3C065F0080F60B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		6B87A4992B3C065F0080F60B /* QRScannerTests */ = {
-			isa = PBXGroup;
-			children = (
-				6B87A49A2B3C065F0080F60B /* QRScannerTests.swift */,
-			);
-			path = QRScannerTests;
-			sourceTree = "<group>";
-		};
-		6B87A4A32B3C065F0080F60B /* QRScannerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				6B87A4A42B3C065F0080F60B /* QRScannerUITests.swift */,
-				6B87A4A62B3C065F0080F60B /* QRScannerUITestsLaunchTests.swift */,
-			);
-			path = QRScannerUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +237,7 @@
 			files = (
 				6B87A48C2B3C065C0080F60B /* ContentView.swift in Sources */,
 				6B87A48A2B3C065C0080F60B /* QRScannerApp.swift in Sources */,
+				6B87A4B42B3C06AA0080F60B /* QRCodeScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +245,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B87A49B2B3C065F0080F60B /* QRScannerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,8 +252,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B87A4A72B3C065F0080F60B /* QRScannerUITestsLaunchTests.swift in Sources */,
-				6B87A4A52B3C065F0080F60B /* QRScannerUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +321,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -399,7 +375,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -414,11 +390,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QRScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = DTD7W6D23B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to allow you to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -429,8 +408,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.QRScanner;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fingent.upskill.standalone.cbn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -442,11 +422,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"QRScanner/Preview Content\"";
+				DEVELOPMENT_TEAM = DTD7W6D23B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app requires access to the camera to allow you to take photos.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -459,6 +442,7 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.QRScanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -468,7 +452,6 @@
 		6B87A4AE2B3C065F0080F60B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -487,7 +470,6 @@
 		6B87A4AF2B3C065F0080F60B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -506,7 +488,6 @@
 		6B87A4B12B3C065F0080F60B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -523,7 +504,6 @@
 		6B87A4B22B3C065F0080F60B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
